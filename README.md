@@ -1,8 +1,11 @@
 #PetSitterApp
 
 
-#Test2 From Bijay
+#Bijay
 
-#Test3 from Christian
+#Christian
+  - Wireframes Completed
+  - User Authenication & User Authorization
 
-# Hello This is matt
+
+#Matt

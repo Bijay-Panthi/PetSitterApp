@@ -1,0 +1,11 @@
+<h4>All Users</h4>
+
+<h4>
+<%= link_to "Create New Users", "/users/new" %>
+</h4>
+
+<% @userall.each do |user| %>
+<p>
+    <%= link_to( user.name, "/users/#{user.id}" ) %>
+</p>
+<% end %>
