@@ -1,2 +1,20 @@
-<h1>Services#edit</h1>
-<p>Find me in app/views/services/edit.html.erb</p>
+
+
+<h3>Update your details</h3>
+
+<%= form_for @service, url: "/services/#{@service.id}" do |f| %>
+<p>
+  <%= f.label :Service_name %>
+  <%= f.text_field :name, required: true %>
+</p>
+<p>
+<%= f.label :description %>
+<%= f.text_field :description, :readonly => true %>
+</p>
+<p>
+<%= f.label :price %>
+<%= f.password_field :price, required: true %>
+</p>
+<%= f.submit %>
+<% end %>
+</div>

@@ -21,10 +21,13 @@
     </tr>
     <br>
     <tr>
-      Password Digesst: <%= @user.password_digest %>
+      Password Digest: <%= @user.password_digest %>
     </tr>
   </tr>
 </table>
 
+<%= link_to "Edit User", "/users/#{@user.id}/edit" %>
+<%= link_to "Delete Users", @user, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to "Back to All Users", "/users"  %>
 
 <!-- ENTER SERVICES AND PETS BUTTONS FROM HERE  -->
