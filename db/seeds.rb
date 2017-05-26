@@ -54,9 +54,9 @@ service1 = Service.create(name: "Home Care", description: "All care done at home
 # t.integer :sitter_id
 
 service2 = Service.create(name: "Pet sitter", description: "Taking care at owns house", price: 57)
-service3 = Service.create(name: "Walk", description: "Park walk", price: 42)
-service4 = Service.create(name: "Clean", description: "Park walk", price: 42)
-service5 = Service.create(name: "Walk", description: "Park walk", price: 42)
+service3 = Service.create(name: "Pet walk", description: "Park walk", price: 42)
+service4 = Service.create(name: "Pet clean", description: "Park walk", price: 42)
+service5 = Service.create(name: "Pet Walk", description: "Park walk", price: 42)
 service6 = Service.create(name: "Walk", description: "Park walk", price: 42)
 service7 = Service.create(name: "Walk", description: "Park walk", price: 42)
 service8 = Service.create(name: "Walk", description: "Park walk", price: 42)

@@ -3,8 +3,8 @@
 
     <p> Service name: <%= link_to booking.service.name %> </p>
     <p> Sitter name: <%= link_to booking.sitter.name %> </p>
-    <p> Start time: <%= booking.start_time %> </p>
-    <p> End time: <%= booking.end_time %> </p>
+    <p> Start time: <%= booking.start_time.strftime "%l:%M%P - %B %d, %Y" %> </p>
+    <p> End time: <%= booking.end_time.strftime "%l:%M%P - %B %d, %Y" %> </p>
 
   <% if @current_user %>
       <%= form_tag( "/bookings/#{booking.id}/book" ) do %>

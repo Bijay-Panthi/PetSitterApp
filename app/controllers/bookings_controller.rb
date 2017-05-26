@@ -28,6 +28,15 @@ def book
 
 end
 
+def unbook
+  booking = Booking.find_by(id: params[:id])
+  booking.available = true
+  booking.owner_id = nil
+  booking.save
+
+  redirect_to :back
+end
+
   def available_bookings
     @available_bookings = Booking.where(available: true)
   end

@@ -41,6 +41,7 @@ resources :users do
 end
 
   post "/bookings/:id/book" => "bookings#book"
+  delete "/bookings/:id/unbook" => "bookings#unbook"
 
   resources :services, :users, :pets, :bookings
 
