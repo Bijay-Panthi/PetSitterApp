@@ -14,12 +14,12 @@ class BookingsController < ApplicationController
   end
 
 def book
-  #   When this request hits the controller
-  #   Find the booking with the right ID ( params[:id] )
-  #   Set the owner id to be the ID of whoever is logged in
-  #   Set available to be false
-  #   Save that booking
-  #   Redirect back to /available_bookings
+    # When this request hits the controller
+    # Find the booking with the right ID ( params[:id] )
+    # Set the owner id to be the ID of whoever is logged in
+    # Set available to be false
+    # Save that booking
+    # Redirect back to /available_bookings
   @booking = Booking.find_by(id: params["id"])
   @booking.owner_id = @current_user.id
   @booking.available = false
@@ -43,7 +43,6 @@ end
 
   def booked_users
      Booking.where(owner_id: @current_user.id)
-
   end
 
   # GET /bookings/new

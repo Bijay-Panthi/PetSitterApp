@@ -16,8 +16,7 @@ class ServicesController < ApplicationController
     # @service = Service.find_by(id: params["id"])
 
     @service = Service.find(params[:id])
-
-    @user = @service.user
+    #@user = @service.user
 
   end
 
