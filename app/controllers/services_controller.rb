@@ -17,7 +17,6 @@ class ServicesController < ApplicationController
 
     @service = Service.find(params[:id])
     #@user = @service.user
-
   end
 
   def create
@@ -48,7 +47,7 @@ class ServicesController < ApplicationController
 
   private
   def service_params
-    params.require(:service).permit(:name, :description, :price)
+    params.require(:service).permit(:name, :description)
   end
 
 end
