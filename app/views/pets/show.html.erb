@@ -1,4 +1,7 @@
 
+<% if @pet.image %>
+  <%= image_tag( @pet.image ) %>
+<% end %>
 
 <ul>
   <li>Name: <%= @pet.name %></li>
@@ -22,5 +25,5 @@
 
     <p>
       Owner Name:
-      <%= link_to(@pet.user.name, "/users/#{@pet.user_id}") %>
+      <%= link_to(@pet.user.name, "/users/#{@user.id}") %>
     </p>
